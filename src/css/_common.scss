@@ -1,0 +1,65 @@
+.ion-icon {
+  font-size: 36px;
+  line-height: 48px;
+  display: block;
+}
+
+.ak-logo {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  transition: color ease $transition;
+
+  &:hover {
+    text-decoration: none;
+    color: $color_green;
+  }
+
+}
+
+.ak-title-wrapper {
+  min-height: 190px;
+}
+
+.ak-title {
+  font-size: 30px;
+  line-height: 48px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 16px;
+  display: inline-block;
+  text-transform: uppercase;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: $color_green;
+    bottom: -10px;
+    top: 50%;
+    left: 0;
+    height: 21px;
+    width: 70px;
+    z-index: -1;
+  }
+}
+
+.ak-button {
+  background-color: $color_green;
+  text-transform: uppercase;
+  display: inline-block;
+  color: #fff;
+  border: 2px solid $color_green;
+  line-height: 50px;
+  height: 50px;
+  padding: 0 40px;
+  transition: ease $transition;
+  transition-property: color, background-color;
+
+  &:hover {
+    background-color: #fff;
+    color: $color_green;
+    text-decoration: none;
+  }
+}
